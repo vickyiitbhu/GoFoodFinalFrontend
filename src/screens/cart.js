@@ -24,7 +24,7 @@ export default function Cart() {
     console.log("data:",data)
     console.log("userEmail",userEmail)
     const orderDate = formatOrderDate(new Date());
-    let response = await fetch("http://localhost:5000/api/orderdata",{
+    let response = await fetch("https://go-food-final-backend.vercel.app/api/orderdata",{
       method: 'POST',
       headers:{
         'Content-Type': 'application/json'

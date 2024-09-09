@@ -9,7 +9,7 @@ export default function MyOrder() {
     const [canReturn, setCanReturn] = useState(false);
     const fetchMyOrder = async () => {
         console.log(localStorage.getItem('userEmail'))
-        await fetch("http://localhost:5000/api/myorderdata", {
+        await fetch("https://go-food-final-backend.vercel.app/api/myorderdata", {
             // credentials: 'include',
             // Origin:"http://localhost:3000/login",
             method: 'POST',
